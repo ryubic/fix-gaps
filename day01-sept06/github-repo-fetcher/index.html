@@ -6,8 +6,10 @@
     <title>Document</title>
   </head>
   <body>
-    <input type="text" id="usernameField" />
-    <button onclick="fetchRepos()">Submit</button>
+    <form onsubmit="fetchRepos(event)">
+      <input type="text" id="usernameField" />
+      <button>Submit</button>
+    </form>
     <div id="profile" style="padding-top:10px; padding-bottom: 10px;"></div>
     <div id="repos"></div>
     <script src="script.js"></script>
